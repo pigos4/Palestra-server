@@ -13,8 +13,8 @@ import {  Field, ID, ObjectType } from '@nestjs/graphql';
 //   image:string;
 
 // }
-@ObjectType({ description: "Exercises " })
-export class Exercises {
+@ObjectType({ description: "Exercise " })
+export class Exercise {
   @Field((type) => ID)
   id: string;
 

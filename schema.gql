@@ -4,13 +4,14 @@
 
 directive @upper on FIELD_DEFINITION
 
-"""Exercises """
-type Exercises {
+"""Exercise """
+type Exercise {
   id: ID!
   name: String!
   image: String!
 }
 
 type Query {
-  exercise: [Exercises!]!
+  exercises: [Exercise!]!
+  exercise(id: String!): Exercise!
 }
